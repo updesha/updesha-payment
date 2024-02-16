@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Updesha Payment</title>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Neucha' rel='stylesheet' type='text/css'>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap') * {
+      justify-content: center;
+      text-align: center;
+      text-overflow: ellipsis;
+    }
+
+    h1 {}
+
+    .page {
+      display: flex;
+      /* Make the body a flex container */
+      justify-content: center;
+      /* Center children horizontally */
+      align-items: center;
+      /* Center children vertically */
+      height: 100vh;
+      /* Set body height to full viewport height for vertical centering */
+      margin: 0;
+      /* Remove default margin */
+      flex-direction: column;
+    }
+
+    body {
+      font-family: Helvetica, sans-serif;
+
+      text-align: center;
+      background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    }
+
+    /* Styling the area of the slides */
+    #slideshow {
+      overflow: hidden;
+      height: 25vh;
+      width: 50vh;
+      margin: 0 auto;
+      margin-top: 5vh;
+      border-radius: 10px;
+    }
+
+    /* Style each of the sides 
+with a fixed width and height */
+    .slide {
+      float: left;
+      height: 25vh;
+      width: 50vh;
+      font-family: "Courgette", cursive;
+      font-weight: 400;
+      font-style: normal;
+      color: aliceblue;
+    }
+
+    /* Add animation to the slides */
+    .slide-wrapper {
+      justify-content: center;
+      /* Calculate the total width on the
+basis of number of slides */
+      width: calc(50vh * 4);
+      /* Specify the animation with the
+duration and speed */
+      animation: slide 10s ease infinite;
+    }
+
+    /* Set the background color
+of each of the slides */
+    .slide:nth-child(1) {
+      background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    }
+
+    .slide:nth-child(2) {
+      background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+    }
+
+    .slide:nth-child(3) {
+      background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+    }
+
+    .slide:nth-child(4) {
+      background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    }
+
+    /* Define the animation 
+for the slideshow */
+    @keyframes slide {
+
+      /* Calculate the margin-left for 
+each of the slides */
+      20% {
+        margin-left: 0px;
+      }
+
+      40% {
+        margin-left: calc(-50vh * 1);
+      }
+
+      60% {
+        margin-left: calc(-50vh * 2);
+      }
+
+      80% {
+        margin-left: calc(-50vh * 3);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <h1 class="logo">
+      UPDESHA
+    </h1>
+    <img src="atom-logo.png" style="width: 10vh; height: 10vh; margin-bottom: 5vh;">
+
+    <form>
+      <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_NJnnpJWjyJB4c8"
+        async></script>
+    </form>
+    <div id="slideshow">
+      <div class="slide-wrapper">
+
+        <!-- Define each of the slides
+     and write the content -->
+
+        <div class="slide">
+          <h1 class="slide-number">
+            Mentorship Till Advanced
+          </h1>
+        </div>
+        <div class="slide">
+          <h1 class="slide-number">
+            Personalised Stratergies
+          </h1>
+        </div>
+        <div class="slide">
+          <h1 class="slide-number">
+            Top Mentors From IITs
+          </h1>
+        </div>
+        <div class="slide">
+          <h1 class="slide-number">
+            IIT mei le ja ke manege !!
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    Contact:+918668989031 Email:support@updesha.online
+  </footer>
+  <script>
+
+  </script>
+</body>
+
+</html>
